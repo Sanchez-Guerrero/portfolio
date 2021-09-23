@@ -4,22 +4,25 @@
 
 body {
   margin: 0;
-  font-family: Lilex;
 }
 
-.header {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.navbar {
   width: 100%;
   height: 58px;
   background-color: #231e23;
+  padding: 13px;
+}
+
+.container {
+  max-width: 1500px;
+  height: 33px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  padding-top: 13px;
-  font-size: 25px;
-  text-decoration: none;
   color: #ffb86c;
 }
 
@@ -27,131 +30,41 @@ body {
   color: #ff79c6;
 }
 
-.menu {
-  padding-top: 18px;
-  margin-left: 753px;
-}
-
+.menu,
+.list,
 .link {
-  margin-left: 28px;
-  font-size: 18px;
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
   text-decoration: none;
+  font-size: 18px;
   color: #ffb86c;
 }
 
-.section-home {
-  width: 100%;
-  height: 338px;
-  display: flex;
-  flex-direction: row;
-  background-color: #4b424b;
+.link:hover {
+  border-bottom: 1px solid #ff79c6;
+  transition: margin-left 4s;
 }
 
-.box-image {
-  width: 45%;
-  height: 338px;
-}
-
-.img-dev {
-  margin: 20px 350px;
-  width: 342px;
-  height: 298px;
-}
-
-.box-title {
-  width: 60%;
-  height: 338px;
-}
-
-.name {
-  margin: 96px 320px -30px 150px;
-  text-align: center;
-  font-size: 50px;
-  color: #ffb86c;
-}
-
-.titleweb {
-  margin-left: 150px;
-  margin-right: 320px;
-  text-align: center;
-  font-size: 30px;
-  color: #fff;
-}
-
-.section-about-me {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.box-headers {
-  position: absolute;
-  width: 310px;
-  height: 86px;
-  margin: -45px;
-  margin-left: 800px;
-  border: 3px solid #ff79c6;
-  border-radius: 15px;
-  background-color: #4b424b;
-}
-
-.title-headers {
-  font-size: 25px;
-  text-align: center;
-  color: #ffb86c;
-}
-
-.box-about-me {
-  margin-top: 80px;
-  width: 50%;
-  text-align: center;
-}
-
-.greet {
-  width: 313px;
-  margin: auto;
-  margin-bottom: 13px;
-}
-
-.description {
-  width: 600px;
-  margin: auto;
-}
-
-.box-avatar-one {
-  width: 50%;
-}
-
-.avatar-one {
-  margin-left: 150px;
-  margin-top: -30px;
-  width: 320px;
-  height: 320px;
-}
-
-/* .title-portfolio {
-  font-size: 25px;
-  text-align: center;
-  color: #ffb86c;
-} */
-
-.section-portfolio {
-  display: flex;
-  flex-direction: row;
+.header,
+.portfolio,
+.contact {
   width: 100%;
   height: 338px;
   background-color: #4b424b;
 }
 
-.section-habilities {
+.about-me,
+.habilities {
   width: 100%;
   height: 338px;
 }
 
-.section-contact {
-  width: 100%;
+.container-sections {
+  max-width: 1500px;
   height: 338px;
-  background-color: #4b424b;
+  margin: 0 auto;
+  background-color: lightcoral;
 }
 
 .footer {
