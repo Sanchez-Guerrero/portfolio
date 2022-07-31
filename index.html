@@ -2,183 +2,499 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Sánchez Guerrero</title>
   </head>
   <body>
-    <header class="navbar">
-      <div class="container">
-        <div class="logo">
-          <h1><span class="tags"><</span>SG<span class="tags">/></span></h1>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+          <h5 class="d-inline pl-2 text-white">Sánchez-Guerrero</h5>
         </div>
-        <nav class="menu">
-          <ul class="list">
-            <li class="item"><a class="link" href="#aboutme">Sobre mí</a></li>
-            <li class="item">
-              <a class="link" href="#portfolio">Portafolio</a>
-            </li>
-            <li class="item">
-              <a class="link" href="#abilities">Habilidades</a>
-            </li>
-            <li class="item"><a class="link" href="#contact">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <section class="header">
-      <div class="container-sections">
-        <div class="image">
-          <img src="assets/images/dev.png" alt="avatar-production" />
-        </div>
-        <div class="title">
-          <h3>
-            <span class="tags"><</span>Sánchez Guerrero<span class="tags"
-              >/></span
-            >
-          </h3>
-          <p class="subtitle">Desarrollador web junior. 👩‍💻</p>
+        <div class="col-6 pt-2">
+          <div
+            class="row text-center p-0 d-flex justify-content-end align-items-center"
+          >
+            <div class="col-3">
+              <a href="#about" class="text-white navigation-link">Sobre mí</a>
+            </div>
+            <div class="col-3">
+              <a href="#projects" class="text-white navigation-link"
+                >Portafolio</a
+              >
+            </div>
+            <div class="col-3">
+              <a href="#courses" class="text-white navigation-link">Cursos</a>
+            </div>
+            <div class="col-3">
+              <a href="#social-media" class="text-white navigation-link"
+                >Contacto</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <div class="box-sections" id="aboutme">
-      <p><span class="tags"><</span>Sobre mí<span class="tags">/></span></p>
     </div>
-    <section class="about-me">
-      <div class="container-sections">
-        <div class="subtitle-me">
-          <p class="text">Hola 👋, me llamo Moisés David Sánchez Guerrero.</p>
-          <p class="subtext">
+
+    <!-- Main Container -->
+    <div class="main-container container">
+      <div class="row main_row">
+        <div class="col-6">
+          <h2 class="text-white">Hola, Soy</h2>
+          <h1 class="text-warning m-heading">Moisés David</h1>
+          <h2 class="text-white">Desarrollador Web 👨‍💻</h2>
+        </div>
+        <div class="col-6">
+          <img
+            src="https://lh3.googleusercontent.com/c5YJQu8zcQc5ikGmtod9sIChTV5FvHCKcOT33Dk3xvsmpoaiJr00rVzcx0JxT3GIElF76AnpiU_QaV9OUMC86UncMOo8Uf8mGqBjvpsfGNXKsAdsSWGgTxU_6c6VBOvTjLLUr8Nus4GRRiX1Q1qL6j2T3TAGRaHzaeoCK51wXv-4QP6BUIFRuMAIj0IaWkd0sFF4bGOtYac3H3hDL7wKe3KF3NVEsoa3N2OzdM22D-Uh6I8csO0p8UF9vR3ZdlbdO561as6ro9QYi0gRrK41tAtRQ4KBK_oDuJd5yUGHf5YIiEmILu_4_iC_wrN-WQMUeKBiw5nCRiSLFSSh--ssaPXtKtQ3neYh5gNq3Q5tZsqyQea6_-5gDAxS_NjmQxV_WLGnpypPvXQwrzDZbluipftGqrwGd0QTCg9iDIE71YDhBxIINse7EpqA85X2VFv9iGX1rHcJtkQO-vGfV0whdrCXyH94WtJD7QmBwMUffNBE6mVmztlWalsrenigbthuTDJDH9IX_NOOTdWzPSjEg-muzyn-0DeIEnLJplsADTPb4oum6hFCXz4JRFEf-Y2Ozt5Gpw6btC-QwiDiTz8kyPQTgYrSJ7ClPXtcJNvd9iybBDHu_fXFlael7eHytm8JiayZdrpHBLMR77SezxoMOys-wnTrGHRLWJO2smwhd9pmSVPlPwEW6cY6WIBDuRN7VJgfqRUFrwyO5fh6kEl8-GNkJvELvxL72jZk9pMbkSNCKdm852Xk3neQJww_SQ=w430-h955-no?authuser=0"
+            class="rounded img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container about p-5">
+      <div class="row">
+        <div class="col-6">
+          <img src="./images/about_img.svg" class="img-fluid" />
+        </div>
+        <div class="col-6 pl-5 pt-5 pb-5 text-white">
+          <h3 class="text-warning">Sobre Mí</h3>
+          <h1 class="m-heading">Un poco acerca de mi</h1>
+          <p>
             Soy desarrollador web en México. Inicie en el mundo del desarrollo
             web a inicios de 2019, después de finalizar mis estudios
             universitarios.
           </p>
-          <a class="btn" href="assets/doc/cv.pdf" download="cv-moises-david.pdf"
-            >DESCARGAR CV 📄</a
+          <p>
+            Durante el camino en mi vida profesional y personal he progresado
+            bastante. Estuve trabajando 3 años en RedYon, donde hice proyectos
+            para los clientes y empleados de la microempresa, en ese lapso de
+            tiempo me ayudo a conocer mucha gente, saber mis capacidades y ser
+            autodidacta. Pude apoyar en un Proyecto en Zeniaq, donde igual
+            aprendí el trabajo en equipo como desarrollador, En estos momentos
+            laboro en Mobiik, una empresa donde cada día aprendo más, el trabajo
+            en equipo esta presente, y he conocido personas de otros lugares de
+            México.
+          </p>
+          <a
+            href="./doc/cv.pdf"
+            download="cv-moises-david.pdf"
+            class="btn btn-outline-warning"
+            >Descargar CV</a
           >
         </div>
-        <div class="me-avatar">
-          <img src="assets/images/avatar-1.png" alt="avatar-me" />
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container mt-5 pt-5">
+      <h1 class="text-warning mb-3 pb-2">Mi Portafolio</h1>
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/credenciales.PNG"
+              class="card-img-top"
+              style="height: 13rem"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">HuehuetocaRH</h5>
+              <p class="card-text">
+                Una aplicación de escritorio, para la creación e impresión de
+                credenciales de PVC.
+              </p>
+              <div class="skills">
+                <img
+                  src="./images/skills/sharp.png"
+                  alt="c#"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/sqlserver.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/alblood.PNG"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Al-Boold</h5>
+              <p class="card-text">
+                Proyecto final de cuatrimestre para la Universidad Tecnológica
+                de Tula-Tepeji.
+              </p>
+              <div class="skills">
+                <img
+                  src="./images/skills/sharp.png"
+                  alt="c#"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/sqlserver.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+              </div>
+              <br />
+              <a
+                href="https://github.com/Sanchez-Guerrero/blooddonation.git"
+                class="btn btn-warning"
+                target="_blank"
+                >Ver Código</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/miredyon.PNG"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mi Redyon</h5>
+              <p class="card-text">
+                Aplicación web progresiva, para los clientes que rentan el
+                servicio de internet en redyon, donde podían ver sus datos, como
+                cambiar la contraseña de su modem, su historial de pagos, pagar
+                con tarjeta o en tiendas departamentales.
+              </p>
+              <div class="skills">
+                <img
+                  src="./images/skills/vue.png"
+                  alt="c#"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/net.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/sharp.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/sqlserver.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/kuali.PNG"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kuali</h5>
+              <p class="card-text">
+                Aplicación web progresiva, para los técnicos donde podían ver
+                sus actividades, nuevas instalaciones, podían ver los datos del
+                cliente, guardar su ubicación, subir fotografías.
+              </p>
+              <div class="skills">
+                <img
+                  src="./images/skills/react.png"
+                  alt="c#"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/nodejs.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/express.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/jwt.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/sqlserver.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/firebase.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/npm.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/linux.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/pokedex.PNG"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pokédex</h5>
+              <p class="card-text">
+                Aplicación web, con consumo de la API Rest de pokémon.
+              </p>
+              <div class="skills">
+                <img
+                  src="./images/skills/html.png"
+                  alt="c#"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/css.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/js.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+              </div>
+              <br />
+              <a
+                href="https://pokedex-sanchez-guerrero.netlify.app/"
+                class="btn btn-warning"
+                target="_blank"
+                >Ver Proyecto</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/3dcard.PNG"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">3D Card Effect</h5>
+              <p class="card-text">
+                Página web, donde usamos las coordenadas del mouse, para otorgar
+                el efecto 3D.
+              </p>
+              <div class="skills">
+                <img
+                  src="./images/skills/html.png"
+                  alt="c#"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/css.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+                <img
+                  src="./images/skills/js.png"
+                  alt="SqlServer"
+                  class="skills-icon"
+                />
+              </div>
+              <br />
+              <a
+                href="https://serene-aryabhata-f90b52.netlify.app/"
+                class="btn btn-warning"
+                target="_blank"
+                >Ver Proyecto</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <div id="portfolio" class="box-sections">
-      <p><span class="tags"><</span>Portafolio<span class="tags">/></span></p>
-    </div>
-    <section class="portfolio">
-      <div class="container-sections"></div>
-    </section>
-
-    <div id="abilities" class="box-sections">
-      <p><span class="tags"><</span>Habilidades<span class="tags">/></span></p>
     </div>
 
-    <section class="abilities">
-      <div class="box-skills">
-        <img class="img-skill" src="assets/images/skills/html.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/css.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/js.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/git.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/linux.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/react.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/nodejs.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/npm.png" alt="" />
-        <img
-          class="img-skill"
-          src="assets/images/skills/bootstrap.png"
-          alt=""
-        />
-        <img class="img-skill" src="assets/images/skills/firebase.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/mongo.png" alt="" />
-        <img
-          class="img-skill"
-          src="assets/images/skills/sqlserver.png"
-          alt=""
-        />
-        <img class="img-skill" src="assets/images/skills/mysql.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/java.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/sharp.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/net.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/vue.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/jwt.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/socket.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/code.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/expo.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/postman.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/express.png" alt="" />
-        <img class="img-skill" src="assets/images/skills/electron.png" alt="" />
-      </div>
-    </section>
-
-    <div id="contact" class="box-sections">
-      <p><span class="tags"><</span>Contacto<span class="tags">/></span></p>
-    </div>
-    <section class="contact">
-      <div class="container-sections">
-        <div class="image-contact">
-          <img src="assets/images/avatar-2.png" alt="avatar-me" />
+    <!-- Courses Section -->
+    <div id="courses" class="container mt-5 pt-5">
+      <h1 class="text-warning mb-3 pb-2">Cursos</h1>
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/courses/curso001.PNG"
+              class="card-img-top"
+              style="height: 13rem"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Administrar el tiempo es administrar la vida
+              </h5>
+            </div>
+          </div>
         </div>
-        <form
-          id="form"
-          action="https://formspree.io/f/mdoybveq"
-          method="POST"
-          class="form-contact"
-        >
-          <input
-            id="email"
-            name="email"
-            class="inemail"
-            type="email"
-            placeholder="Tú email..."
-            required
-          />
-          <textarea
-            id="message"
-            name="message"
-            class="intextarea"
-            cols="10"
-            rows="10"
-            placeholder="Tú mensaje..."
-            required
-          ></textarea>
-          <input class="btn submit" type="submit" value="Enviar mensaje" />
-        </form>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/courses/curso002.PNG"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Aprendizaje 4.0: learnability en tu vida
+              </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./images/courses/curso003.PNG"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">El mundo de la programación en Python</h5>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <footer class="footer">
-      <div class="social-network">
-        <a
-          target="_blank"
-          href="https://github.com/Sanchez-Guerrero"
-          class="icon"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/sancguerrero/"
-          class="icon"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a
-          target="_blank"
-          href="https://www.facebook.com/moisesdavid.sanchezguerrero/"
-          class="icon"
-          ><i class="fab fa-facebook"></i
-        ></a>
+    <!-- Social Media Section -->
+    <div id="social-media" class="container-fluid">
+      <div class="container text-white py-5">
+        <h4 class="text-warning">Contacto</h4>
+        <h1 class="m-heading">Seamos amigos</h1>
+        <div class="row pt-5">
+          <div class="col-3 media_link btn" href="#">
+            <a
+              href="https://www.linkedin.com/in/mois%C3%A9s-david-s%C3%A1nchez-guerrero-427a42223/"
+              target="_blank"
+            >
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 pt-2 text-white">LinkedIn</h3>
+                </div>
+                <div
+                  class="col-6 d-flex justify-content-end align-items-center"
+                >
+                  <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <a href="https://github.com/Sanchez-Guerrero" target="_blank">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 pt-2 text-white">Github</h3>
+                </div>
+                <div
+                  class="col-6 d-flex justify-content-end align-items-center"
+                >
+                  <i class="fab fa-github fa-2x text-secondary"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <a href="https://www.instagram.com/sancguerrero/" target="_blank">
+              <div class="row">
+                <div class="col-6 d-flex justify-content-start">
+                  <h3 class="m-0 pt-2 text-white">Instagram</h3>
+                </div>
+                <div
+                  class="col-6 d-flex justify-content-end align-items-center"
+                >
+                  <i class="fab fa-instagram fa-2x text-secondary"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-white">Email</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fas fa-envelope fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="text-footer">💪 !Nunca te rindas y lucha por tus sueños¡ 🇲🇽</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          Copyright &copy; 2020 |
+          <a class="text-warning text-decoration-none" href="#about"
+            >Sánchez-Guerrero</a
+          >
+        </h5>
+      </div>
     </footer>
-    <script src="js/index.js"></script>
   </body>
 </html>
